@@ -203,6 +203,10 @@ h2 {
 }
 
 img {
+    border-radius: 50%;
+}
+
+a img {
     border-radius: 0;
 }
 
