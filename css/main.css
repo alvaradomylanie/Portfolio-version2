@@ -187,7 +187,7 @@ li {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: tan;      
+    background-color: beige;      
 }
 
 span {
@@ -219,4 +219,16 @@ h3 {
 p {
     font-size: 24px;
 }
+
+#contact {
+    padding-top: 30px;
+}
+
+.container {
+    padding-top: 35px;
+    border-top: solid;
+    border-style:dotted;
+}
+
+
 
