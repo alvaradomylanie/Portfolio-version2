@@ -1,7 +1,18 @@
 main.css
 /* styles.css */
 
-/*media:query*/
+/*-------- TABLET --------*/
+
+(min-width)348px{}
+
+/*-------- For screens 768px and larger --------*/
+
+(min-width)768px{}
+
+
+/*-------- For screens 1200px wide and larger --------*/
+
+(min-width)1200px {} 
 
 
 body {
