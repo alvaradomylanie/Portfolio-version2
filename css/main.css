@@ -229,17 +229,42 @@ h3 {
 
 p {
     font-size: 24px;
-}
-
-#contact {
-    padding-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .container {
-    padding-top: 35px;
+    margin-left: 0;
+    padding-top: 5px;
     border-top: solid;
     border-style:dotted;
 }
+
+#contact {
+  margin-top: 0;
+}
+
+.small-block {
+    height: 210px;
+    padding: 20px 40px;
+    float: right;
+}
+
+.container #contact {
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
