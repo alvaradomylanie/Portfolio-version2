@@ -235,7 +235,7 @@ p {
 
 .container {
     margin-left: 0;
-    padding-top: 5px;
+    padding-top: 20px;
     border-top: solid;
     border-style:dotted;
 }
@@ -245,8 +245,8 @@ p {
 }
 
 .small-block {
-    height: 210px;
-    padding: 20px 40px;
+    height: 215px;
+    padding-bottom: 50px;
     float: right;
 }
 
