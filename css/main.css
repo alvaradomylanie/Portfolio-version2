@@ -1,6 +1,10 @@
 main.css
 /* styles.css */
 
+/*-------- Smaller Devices --------*/
+
+(min-width)375px{}
+
 /*-------- TABLET --------*/
 
 (min-width)348px{}
