@@ -3,7 +3,13 @@ main.css
 
 /*--------- Mobile Device ---------*/
 
-(min-width)360px{}
+@media  (max-width: 600px) {
+    .container {
+        width: 100%; /* Full width on mobile */
+        padding: 10px; /* Add spacing */
+    }
+}
+
 
 /*-------- TABLET --------*/
 
@@ -16,7 +22,7 @@ main.css
 
 /*-------- For screens 1200px wide and larger --------*/
 
-(min-width)1200px {} 
+@media (min-width)1200px {} 
 
 
 body {
