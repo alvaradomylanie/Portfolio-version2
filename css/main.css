@@ -240,7 +240,7 @@ p {
 
 .container #contact {
     margin-top: 100px;
-    padding-top: 10px;
+    padding-top: 40px;
     border: solid;
     border-style: solid purple;
     
@@ -272,7 +272,7 @@ h3 {
 
 h1 {
     color: purple;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 
