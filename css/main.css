@@ -1,28 +1,81 @@
 main.css
 /* styles.css */
 
-/*--------- Mobile Device ---------*/
+/*-------- Mobile Device --------*/
 
-@media  (max-width: 600px) {
-    .container {
-        width: 100%; /* Full width on mobile */
-        padding: 10px; /* Add spacing */
-    }
+/* iPhone 6/7/8, X, 11, 12, 13, 14, 15 (regular/pro) */
+@media only screen and (max-width: 375px) {
+  #Contact h1 {
+    font-size: 20px;
+    color: purple;
+  }
+  #Contact p {
+    font-size: 15px;
+  }
 }
+
+/* iPhone Plus and Pro Max models */
+@media only screen and (max-width: 430px) {
+  #Contact h1 {
+    font-size: 22px;
+    color: purple;
+  }
+  #Contact p {
+    font-size: 16px;
+  }
+}
+
 
 
 /*-------- TABLET --------*/
 
-(min-width)348px{}
+/* Tablet landscape (wider screens) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  #Contact {
+    padding: 70px 50px;
+  }
 
-/*-------- For screens 768px and larger --------*/
+  #Contact h1 {
+    font-size: 34px;
+  }
+}
 
-(min-width)768px{}
+/* Small laptops and desktops */
+@media only screen and (min-width: 1025px) {
+  #Contact {
+    padding: 80px 60px;   /* more breathing room */
+    text-align: left;     /* align text left for wider screens */
+  }
 
+  #Contact h1 {
+    font-size: 36px;      /* larger heading */
+    color: purple;        /* keep "Contact" purple */
+  }
 
-/*-------- For screens 1200px wide and larger --------*/
+  #Contact p {
+    font-size: 18px;
+    line-height: 1.8;
+  }
 
-@media (min-width)1200px {} 
+  #Contact a {
+    font-size: 18px;
+  }
+}
+
+/* Large desktops */
+@media only screen and (min-width: 1280px) {
+  #Contact {
+    padding: 100px 80px;
+  }
+
+  #Contact h1 {
+    font-size: 40px;
+  }
+
+  #Contact p {
+    font-size: 20px;
+  }
+}
 
 
 body {
@@ -248,9 +301,14 @@ p {
     margin-right: 30px;
 }
 
+#contact .contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .container #contact {
     margin-top: 100px;
-    padding-top: 40px;
+    padding-top: 100px;
     border: solid;
     border-style: solid purple;
     
@@ -282,8 +340,38 @@ h3 {
 
 h1 {
     color: purple;
-    font-size: 40px;
+    font-size: 30px;
+    padding-top: 50px;
 }
+
+/* Contact section */
+#Contact {
+    background-color: #f9f9f9;   /* light background */
+    padding: 40px 20px;          /* space inside the section */
+    margin-top: 50px;            /* space above the section */
+    text-align: center;          /* center all content */
+    border-top: 2px solid #ccc;  /* subtle divider line */
+}
+
+#Contact .contact-title {
+  color: purple;
+}
+
+/* Container to limit width */
+#Contact .container {
+  max-width: 800px;
+  margin: 0 auto;              /* center horizontally */
+}
+
+/* Heading */
+#Contact h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+
 
 
 
