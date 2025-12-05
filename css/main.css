@@ -1,79 +1,17 @@
 main.css
 /* styles.css */
 
-/*-------- Mobile Device --------*/
-
-/* iPhone 6/7/8, X, 11, 12, 13, 14, 15 (regular/pro) */
-@media only screen and (max-width: 375px) {
-  #Contact h1 {
-    font-size: 20px;
-    color: purple;
-  }
-  #Contact p {
-    font-size: 15px;
-  }
+/* Default styles (desktop-first) */
+.container {
+  width: 800px;
+  margin: auto;
 }
 
-/* iPhone Plus and Pro Max models */
-@media only screen and (max-width: 430px) {
-  #Contact h1 {
-    font-size: 22px;
-    color: purple;
-  }
-  #Contact p {
-    font-size: 16px;
-  }
-}
-
-
-
-/*-------- TABLET --------*/
-
-/* Tablet landscape (wider screens) */
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
-  #Contact {
-    padding: 70px 50px;
-  }
-
-  #Contact h1 {
-    font-size: 34px;
-  }
-}
-
-/* Small laptops and desktops */
-@media only screen and (min-width: 1025px) {
-  #Contact {
-    padding: 80px 60px;   /* more breathing room */
-    text-align: left;     /* align text left for wider screens */
-  }
-
-  #Contact h1 {
-    font-size: 36px;      /* larger heading */
-    color: purple;        /* keep "Contact" purple */
-  }
-
-  #Contact p {
-    font-size: 18px;
-    line-height: 1.8;
-  }
-
-  #Contact a {
-    font-size: 18px;
-  }
-}
-
-/* Large desktops */
-@media only screen and (min-width: 1280px) {
-  #Contact {
-    padding: 100px 80px;
-  }
-
-  #Contact h1 {
-    font-size: 40px;
-  }
-
-  #Contact p {
-    font-size: 20px;
+/* Mobile breakpoint */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;   /* Full width so nothing gets cut off */
+    padding: 10px; /* Add spacing so content breathes */
   }
 }
 
