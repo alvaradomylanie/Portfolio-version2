@@ -9,11 +9,14 @@ main.css
 
 /* Mobile breakpoint */
 @media (max-width: 480px) {
-  .container {
-    width: 100%;   /* Full width so nothing gets cut off */
-    padding: 10px; /* Add spacing so content breathes */
+  .sidebar {
+    display: none; /* Hide or move sidebars */
+  }
+  .content {
+    width: 100%; /* Full width so nothing is cut off */
   }
 }
+
 
 
 body {
@@ -201,6 +204,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: beige;      
 }
+
+
 
 span {
     font-size: 48px;
