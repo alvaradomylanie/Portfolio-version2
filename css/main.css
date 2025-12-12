@@ -380,6 +380,11 @@ strong {
     font-size: 1em;
     overflow-wrap:normal;
 }
+
+.contact p {
+    font-size: .5em;
+    flex-wrap: wrap;
+}
 }
 
   
