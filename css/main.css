@@ -1,28 +1,11 @@
 main.css
 /* styles.css */
 
-/* Default styles (desktop-first) */
-.container {
-  width: 800px;
-  margin: auto;
-}
-
-/* Mobile breakpoint */
-@media (max-width: 480px) {
-  .sidebar {
-    display: none; /* Hide or move sidebars */
-  }
-  .content {
-    width: 100%; /* Full width so nothing is cut off */
-  }
-}
-
-
-
 body {
     font-family: Arial, sans-serif;
     background-color: tan;
-    background-size: cover;      
+    background-size: cover;
+    overflow-x: hidden;      
 }
 
 span {
@@ -312,6 +295,94 @@ h1 {
   margin-bottom: 20px;
   color: #333;
 }
+
+
+/* ----------- For screens 768px and larger ----------- */
+@media (min-width: 768px) {
+
+.container {
+  width: 100%;  /* Fills screen */
+  max-width: 1200px;    /* Optional limit for large screens */
+  margin: auto;
+  padding: 1rem;
+}
+
+}
+
+
+/* Tablet Portrait */
+@media (min-width: 600px) and (max-width: 768px) {
+  body {
+    font-size: 1em;
+    padding: 20px;
+    text-align: center;
+  }
+
+  small-block {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+/* Tablet Landscape */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 1.1em;
+    padding: 30px;
+    text-align: center;
+  }
+
+   small-block {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+/* Mobile */
+@media (min-width: 375px) and (max-width: 768px) {
+        body {
+
+    }
+
+  #Contact .contact-title {
+  color: purple;
+  font-size: 2em;
+}
+
+ul li{
+    font-size: .5em;
+}
+
+.block small-block {
+    width: .25em;
+    flex-direction: column;
+    flex-shrink: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;  /* stack boxes */
+    align-items: center;     /* center horizontally */
+  }
+
+  .block {
+    width: 100%;             /* or 90% if you prefer */
+    max-width: 400px;        /* optional */
+  }
+}
+
+strong {
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1em;
+    overflow-wrap:normal;
+}
+}
+
+  
 
 
 
