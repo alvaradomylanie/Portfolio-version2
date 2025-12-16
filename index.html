@@ -19,6 +19,7 @@
        <body>
             <header class="extra-hero">
                 <div class="content-wrapper">
+                     <a id="top"></a>
                         <div class="topnav">
                             <a class="active" href="#background">Background</a>
                             <a href="#skills">Skills</a>
@@ -42,10 +43,12 @@
                 </p>
             <div class="centered-list-container">
                 <ul>
-                    <center><li>HTML</li></center>
-                    <center><li>Git</li></center>
-                    <center><li>GitHub</li></center>
-                    <center><li>CSS</li></center>
+                    <center><li>HTML<br></li></center></li></center>
+                                    *Visual Studio Code*
+                    <center><li>Git [Command Line]</li></center>
+                    <center><li>GitHub [Version Control]</li></center>
+                    <center><li>CSS<br></li></center>
+                                    Frameworks *Bootstrap* *i2symbol* 
                     <center><li>JavaScript</li></center>
                     <center><li>Good Communication</li></center>
                     <center><li>Team work</li></center>
@@ -87,9 +90,28 @@
                                 <h1><center><strong><span class="contact-title">Contact</span></strong></center></h1>
                             
                                 <p>
-                                    Mobile: 646-204-5740<br>Email: <a href="mailto:alvaradomylanie@gmail.com">alvaradomylanie@gmail.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linkedin: <a href="https://www.linkedin.com/in/mylanie-alvarado">https://www.linkedin.com/in/mylanie-alvarado</a>     
-                                </p>    
+                                    Mobile: 646-204-5740<br>Email: <a href="mailto:alvaradomylanie@gmail.com">alvaradomylanie@gmail.com</a><br>LinkedIn: <a href="https://www.linkedin.com/in/mylanie-alvarado">https://www.linkedin.com/in/mylanie-alvarado</a>     
+                                </p>
+                                                            
+                                <a href="#top"><button id="backToTop">Back to top ↑</button></a>                                
+                                
+                                    
                     </div>
                 </section>       
         </body>
+        <script>
+            const backToTop = document.getElementById("backToTop");
+
+            window.onscroll = function () {
+                backToTop.style.display = 
+                    document.documentElement.scrollTop > 300 ? "block" : "none";
+            };
+
+            backToTop.onclick = function () {
+                window.scrollTo({
+                    top: 0;
+                    behavior: "smooth";
+                });
+            };
+        </script>
 </html>
