@@ -297,6 +297,8 @@ h1 {
 }
 
 
+
+
 /* ----------- For screens 768px and larger ----------- */
 @media (min-width: 768px) {
 
@@ -318,11 +320,21 @@ h1 {
     text-align: center;
   }
 
-  small-block {
+  .small-block {
     flex-wrap: wrap;
     flex-direction: column;
   }
 }
+
+.contact p {
+    flex-wrap: wrap;
+    font-size: .20em;
+    flex-wrap: wrap;
+    float: center;
+
+}
+
+
 
 /* Tablet Landscape */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -338,15 +350,23 @@ h1 {
   }
 }
 
+#contact contact-title {
+    float: center;
+}
+
+
+
 /* Mobile */
 @media (min-width: 375px) and (max-width: 768px) {
         body {
+        margin-left: .2em;
+        margin-right: .2em;
 
     }
 
   #Contact .contact-title {
   color: purple;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 ul li{
@@ -354,13 +374,14 @@ ul li{
 }
 
 .block small-block {
-    width: .25em;
+    width: 200px;
+    display:flex;
     flex-direction: column;
     flex-shrink: 50%;
     align-items: center;
-    justify-content: center;
-    margin-left: 15px;
-}
+    justify-self: center;
+   
+    }
 
   .wrapper {
     display: flex;
@@ -372,7 +393,7 @@ ul li{
     width: 100%;             /* or 90% if you prefer */
     max-width: 400px;        /* optional */
   }
-}
+
 
 strong {
     justify-content: center;
@@ -381,10 +402,22 @@ strong {
     overflow-wrap:normal;
 }
 
+#contact contact-title {
+    float: center;
+}
+
 .contact p {
+    flex-wrap: wrap;
     font-size: .5em;
     flex-wrap: wrap;
+    float: center;
+
 }
+
+a {
+    font-size: .75em;
+}
+
 }
 
   
